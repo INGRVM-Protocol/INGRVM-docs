@@ -77,7 +77,7 @@
 19. **[ALL]** **RECOVERY TEST** - Verify system survives 50% node loss without crashing the mesh.
 20. **[ALL]** **Phase 7 Final Stress** - Hardening for public release.
 
-## Phase 8: MVP Launch & Public Beta
+## Phase 8: MVP Launch & Public Beta (CURRENT MVP POINT)
 1.  **[PC]** **File: `cloud_bootstrap.py`** - Deploy 5 high-uptime "Seed Nodes" to DigitalOcean.
 2.  **[SHARED]** **File: `scrub_manifest.json`** - Final automated check for secrets/PII in commit history.
 3.  **[ALL]** **File: `MANIFESTO.md`** - Finalize the "AI-Built" story for the public.
@@ -99,7 +99,90 @@
 19. **[ALL]** **POST-MORTEM** - Document lessons learned from the "AI-First" building process.
 20. **[ALL]** **Phase 9 Kickoff** - "The Global Neural Fabric" begins.
 
-## Phase 9: The Sovereign Mainnet (Real Value & Absolute Privacy)
-1.  **[SHARED]** **File: `zk_proof_generator.py`** - Upgrade Proof-of-Inference (PoI) to use **zk-SNARKs** (Zero-Knowledge Proofs). This allows nodes to prove they did the work without revealing their identity, providing absolute anonymity in the financial layer.
-2.  **[PC]** **DEX Liquidity** - Prepare the $SYN token architecture for listing on Decentralized Exchanges (Uniswap/Jupiter) to allow permissionless swapping for real-world value without centralized KYC.
-3.  **[ALL]** **Mainnet Migration** - Transition from the local SQLite virtual ledger to a sovereign, globally distributed ledger.
+## Phase 9: The Sovereign Mainnet (Privacy & Value)
+1.  **[PC]** **Genesis V2:** Script the creation of the Merkle-Tree-backed Genesis block for Ledger v2.
+2.  **[SHARED]** **Poseidon Integration:** Implement Poseidon hashing in `quantization.py` for SNARK compatibility.
+3.  **[MOBILE]** **Vault Auth:** Build `mobile_wallet.py` using Biometric Auth to protect node private keys.
+4.  **[LAPTOP]** **Gossip V1:** Implement `p2p_gossip.py` using libp2p pubsub for block propagation.
+5.  **[SHARED]** **SNARK Circuits:** Develop Circom circuits for verifying 1-bit Linear layer processing.
+6.  **[PC]** **Liquidity Bridge:** Create a smart contract mock for $SYN/USDC swapping via Jupiter API.
+7.  **[MOBILE]** **Privacy Shield:** Implement "Shielded Rewards" where earnings are hidden from public Hub logs.
+8.  **[LAPTOP]** **Stake Service:** Implement the "Staking" CLI where nodes lock $SYN to earn validation rights.
+9.  **[PC]** **DAO Executor:** Build the "Auto-Law" service that runs passed proposals on-chain.
+10. **[SHARED]** **Spike Encryption:** Implement AES-GCM encryption for spike payloads during transit.
+11. **[MOBILE]** **Android Keystore:** Secure Termux node identities using the hardware-backed TEE.
+12. **[LAPTOP]** **Slashing Consensus:** Implement multi-node agreement for burning a malicious node's stake.
+13. **[PC]** **Migration Portal:** Build the UI for users to swap virtual Session 29 credits for Mainnet $SYN.
+14. **[SHARED]** **ZKP Optimization:** Port SNARK verifiers to C++ for 10x faster mobile verification.
+15. **[LAPTOP]** **Inter-Mesh Bridge:** Implement Hub-to-Hub task delegation for global scale.
+16. **[MOBILE]** **Offline Ledger:** Allow mobile nodes to process spikes while offline and sync rewards later.
+17. **[ALL]** **Mainnet Stress Drill:** Execute 5000 concurrent, zk-verified inferences across the global mesh.
+18. **[PC]** **Technical Whitepaper:** Finalize and publish the math behind Calyx's Proof-of-Inference.
+19. **[SHARED]** **Vulnerability Audit:** Conduct a full manual audit of the Ledger V2 SQL logic.
+20. **[ALL]** **Mainnet v1.0 Launch:** Permanent transition to the decentralized intelligence fabric.
+
+## Phase 10: The Native Nervous System (Hardware Acceleration)
+1.  **[MOBILE]** **Compose Kickoff:** Initialize native Android project with Jetpack Compose.
+2.  **[LAPTOP]** **Windows Service:** Create a background executable that runs the node on boot.
+3.  **[PC]** **Orchestrator Acceleration:** Port Hub scheduling logic to CUDA for sub-millisecond routing.
+4.  **[MOBILE]** **NPU Kernel:** Implement 1-bit XNOR-Popcount kernels using Qualcomm SNPE.
+5.  **[LAPTOP]** **Thermal Throttling:** Implement dynamic load-shedding based on CPU temperature.
+6.  **[PC]** **Calyx Scan:** Build a public block explorer for the $SYN neural economy.
+7.  **[MOBILE]** **Nervous Notify:** Implement real-time push alerts for shard events and earnings.
+8.  **[SHARED]** **Vision Synapse:** Add support for convolutional spiking neurons (Vision).
+9.  **[MOBILE]** **Live Sight:** Implement Camera-to-NPU pipeline for real-time edge vision.
+10. **[LAPTOP]** **Persistent Shards:** Cache sharded weights in local Vector DB for instant restart.
+11. **[PC]** **Hub Scaling:** Deploy the Master Hub across a 3-region Kubernetes cluster.
+12. **[MOBILE]** **Genetic Weights:** Allow mobile nodes to self-optimize synapses via GA.
+13. **[SHARED]** **Audio Synapse:** Implement Mel-frequency spiking encoders for speech.
+14. **[LAPTOP]** **Mesh Benchmark:** Build a "Hardware Tier" tool to rank mesh providers.
+15. **[MOBILE]** **Power Saver:** Implement "Deep Sleep" mesh listening (low wake-up frequency).
+16. **[SHARED]** **Delta Sync:** Implement over-the-air (OTA) updates for synapse weights.
+17. **[PC]** **Network Penetration:** Test Hub resilience against DDoS and Sybil attacks.
+18. **[ALL]** **NPU Verify:** Confirm 32-layer Llama sharding on Pixel 8 NPU hardware.
+19. **[MOBILE]** **Calyx Native v1.0:** Official release to the Google Play Store.
+20. **[ALL]** **Phase 11 Kickoff:** Scaling to the Global Intelligence Fabric.
+
+## Phase 11: The Global Intelligence Fabric (Mass Adoption)
+1.  **[PC]** **Marketplace V2:** Launch hub-to-hub skill trading with automated revenue sharing.
+2.  **[SHARED]** **Autonomous Merge:** Implement logic for nodes to merge two synapses into a hybrid skill.
+3.  **[MOBILE]** **P2P Market:** Enable mobile-to-mobile weight swapping without a central Hub.
+4.  **[LAPTOP]** **Mesh Visualizer:** Build an AR/VR tool to walk through the neural graph.
+5.  **[PC]** **Reputation 2.0:** Implement load balancing based on historical node accuracy.
+6.  **[MOBILE]** **iOS Release:** Launch native iOS node using Kotlin Multiplatform.
+7.  **[SHARED]** **Long Context:** Add SNN-based attention blocks for 1M+ token context.
+8.  **[LAPTOP]** **Content Cache:** Implement CDN-style caching for high-demand synapses.
+9.  **[PC]** **Liquid Democracy:** Implement reputation-weighted vote delegation.
+10. **[MOBILE]** **Wearable Mesh:** Launch "Calyx Lite" for smartwatches and glasses.
+11. **[SHARED]** **Proof-of-Energy:** Validate work based on Joules-per-Spike efficiency.
+12. **[LAPTOP]** **Auto-Opt:** Implement continuous background optimization of local kernels.
+13. **[PC]** **Research Grants:** Launch the $5M $SYN fund for decentralized AI researchers.
+14. **[MOBILE]** **Federated Loop:** Implement local weight-update propagation to peers.
+15. **[SHARED]** **Reasoning Synapse:** Implement Chain-of-Spike logic for complex planning.
+16. **[LAPTOP]** **Multi-Mesh:** Enable sub-meshes to shard themselves recursively.
+17. **[SHARED]** **Encrypted Inference:** Implement FHE (Fully Homomorphic Encryption) for sensitive spikes.
+18. **[ALL]** **10k Milestone:** Celebrate and stabilize at 10,000 active mesh nodes.
+19. **[SHARED]** **Calyx Standard:** Finalize the protocol interop spec for 3rd party nodes.
+20. **[ALL]** **Phase 12 Kickoff:** Reaching Absolute Sovereignty.
+
+## Phase 12: Absolute Sovereignty (The Public Utility)
+1.  **[PC]** **The Sunset:** Shut down central "Calyx-Mesh" servers; mesh becomes self-hosting.
+2.  **[SHARED]** **P2P Storage:** Transition all model weights to permanent IPFS/Filecoin.
+3.  **[MOBILE]** **Island Mode:** Enable mesh functionality without any internet (Local P2P).
+4.  **[LAPTOP]** **Mesh Linux:** Release a specialized ISO optimized for neuromorphic nodes.
+5.  **[SHARED]** **ASIC Spec:** Release open-source RTL for Calyx-specific neural chips.
+6.  **[PC]** **Key Burn:** Cryptographically burn all admin keys; the protocol is final.
+7.  **[MOBILE]** **Zero-Auth:** Implement completely anonymous "Join & Earn" logic.
+8.  **[SHARED]** **Emotional EQ:** Implement synapses for empathetic human interaction.
+9.  **[LAPTOP]** **Agnostic Kernel:** Build a JIT compiler for any CPU/GPU architecture.
+10. **[PC]** **Sovereign Web:** Host the first fully decentralized internet on the Calyx mesh.
+11. **[MOBILE]** **Brain-Link:** Implement BCI-to-Mesh interfaces for thought-based spikes.
+12. **[SHARED]** **Turing Proof:** Implement Proof-of-Intelligence challenges.
+13. **[LAPTOP]** **Self-Healing:** Global routing that automatically reroutes around outages.
+14. **[PC]** **Neural Archive:** Implement permanent storage of the mesh's history.
+15. **[MOBILE]** **Green Edge:** Enable ultra-low-power solar-only mesh participation.
+16. **[SHARED]** **Self-Replication:** Synapses that can autonomously train and spawn variants.
+17. **[ALL]** **Formal Verification:** Use mathematical proofs to ensure protocol safety.
+18. **[ALL]** **Public Utility:** The mesh is declared a self-sustaining human right.
+19. **[ALL]** **Final Audit:** "The Machine That Built Itself" documentation complete.
+20. **[ALL]** **THE SINGULARITY:** Integration complete. The Neural Fabric is global.
