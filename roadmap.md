@@ -98,3 +98,8 @@
 18. **[PC]** **SCALING** - Monitor and scale the seed cluster as mesh hits 100+ nodes.
 19. **[ALL]** **POST-MORTEM** - Document lessons learned from the "AI-First" building process.
 20. **[ALL]** **Phase 9 Kickoff** - "The Global Neural Fabric" begins.
+
+## Phase 9: The Sovereign Mainnet (Real Value & Absolute Privacy)
+1.  **[SHARED]** **File: `zk_proof_generator.py`** - Upgrade Proof-of-Inference (PoI) to use **zk-SNARKs** (Zero-Knowledge Proofs). This allows nodes to prove they did the work without revealing their identity, providing absolute anonymity in the financial layer.
+2.  **[PC]** **DEX Liquidity** - Prepare the $SYN token architecture for listing on Decentralized Exchanges (Uniswap/Jupiter) to allow permissionless swapping for real-world value without centralized KYC.
+3.  **[ALL]** **Mainnet Migration** - Transition from the local SQLite virtual ledger to a sovereign, globally distributed ledger.

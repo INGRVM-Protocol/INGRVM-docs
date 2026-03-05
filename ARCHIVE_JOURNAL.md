@@ -4,6 +4,25 @@ This document contains the historical session logs and reconstructed summaries f
 
 ---
 
+### [2026-03-02] - Session 21: PC Master (The Launch Sequence)
+
+### Status update
+- **Node Identification:** Confirmed session running on **Desktop (PC_MASTER)**.
+- **Organization Setup (DONE):** Created **Calyx-Mesh** GitHub Organization.
+- **Repo Initialization (DONE):** Created and initialized `calyx-core`, `calyx-framework`, and `calyx-docs`.
+- **Codebase Sanitization (DONE):** Removed personal logs and hardcoded local paths. Replaced GitHub URLs with placeholders.
+- **Framework Extraction (DONE):** Moved meta-tools (`JOURNAL.md`, `MAIL_TO_...`, `mcp_setup_guide.md`) to `Calyx/Framework/`.
+- **Roadmap Expanded (DONE):** Defined Phases 5-8 with 20 granular tasks per phase, hardware delegation, and DAP (Distributed Authority Protocol).
+- **Public Sync (DONE):** Created and executed `sync_to_org.ps1`. Successfully pushed sanitized code to the public Org.
+- **Content Strategy (DONE):** Created `Creative/Content_Creation/calyx_video_strategy.md` and `calyx_theories_and_usecases.md`.
+
+### Technical Decisions
+1. **DAP Implementation:** Formally established the **Distributed Authority Protocol** to manage multi-node file ownership and prevent merge conflicts in a decentralized environment.
+2. **Sanitization Strategy:** Moved all sensitive settings to `.env`. Log files containing personal paths were purged.
+3. **Framework Separation:** Packaged the "AI-Builder Framework" as a standalone toolkit for the community, while keeping the core neuromorphic logic in `calyx-core`.
+
+---
+
 ### [2026-02-24 to 2026-02-27] - Sessions 10-17: The Bridge & Sharding Epoch (RECONSTRUCTED)
 *Note: These entries were reconstructed after a synchronization gap. They represent the core technical milestones achieved during the transition from Synapse to Calyx.*
 
