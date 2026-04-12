@@ -1,0 +1,41 @@
+{
+  "phase": "horizon_0",
+  "verdict": "PASS",
+  "timestamp": "2026-03-17T20:51:39.907963",
+  "checks": [
+    {
+      "name": "horizon0:model_converter_exists",
+      "passed": true,
+      "detail": "FOUND: tools\\model_converter.py",
+      "category": "general"
+    },
+    {
+      "name": "import:tools.model_converter",
+      "passed": true,
+      "detail": "Import OK",
+      "category": "test"
+    },
+    {
+      "name": "horizon0:converted_model_exists",
+      "passed": true,
+      "detail": "Found 1 converted model(s): ['gpt2']",
+      "category": "general"
+    },
+    {
+      "name": "pytest:test_distributed_inference.py",
+      "passed": true,
+      "detail": "============================== 4 passed in 4.58s ==============================",
+      "category": "test"
+    },
+    {
+      "name": "horizon0:latency_report_exists",
+      "passed": true,
+      "detail": "Found 3 latency report(s)",
+      "category": "general"
+    }
+  ],
+  "passed_count": 5,
+  "failed_count": 0,
+  "total_count": 5,
+  "sha256": "2d9d311cba505885bb3499ab0dc3a77a69037a8a893b007cf6121fcb4756a6c7"
+}

@@ -1,0 +1,35 @@
+{
+  "phase": "8",
+  "verdict": "PARTIAL",
+  "timestamp": "2026-03-20T19:46:54.830790",
+  "checks": [
+    {
+      "name": "prerequisite:gate_report:7.2",
+      "passed": true,
+      "detail": "Latest 7.2 report: PASS (phase_7_2_20260320_194633.json)",
+      "category": "general"
+    },
+    {
+      "name": "prerequisite:gate_report:7.3",
+      "passed": false,
+      "detail": "Latest 7.3 report: PARTIAL (phase_7_3_20260320_194643.json)",
+      "category": "general"
+    },
+    {
+      "name": "pytest:test_end_to_end.py",
+      "passed": true,
+      "detail": "============================== 8 passed in 7.48s ==============================",
+      "category": "test"
+    },
+    {
+      "name": "import:api.hub_server",
+      "passed": true,
+      "detail": "Import OK",
+      "category": "test"
+    }
+  ],
+  "passed_count": 3,
+  "failed_count": 1,
+  "total_count": 4,
+  "sha256": "19a83097fbd9613b5d187c61ecc1078df0ae9148644f77add6308a50127f4eca"
+}

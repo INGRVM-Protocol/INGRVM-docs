@@ -75,8 +75,8 @@ Prevents 'Context Contamination' between different conversation threads.
 - **Method:** `clear_context()`
 ---
 
-## `cortex_cli.py`
-### Class: `CortexDashboard`
+## `ingrvm_cli.py`
+### Class: `INGRVMDashboard`
 The Command Center for a INGRVM Node.
 Orchestrates all modules into a single, beautiful Solarpunk interface.
 
@@ -221,7 +221,7 @@ a central bootstrap beacon.
 No description.
 
 ### Class: `INGRVMMasterNode`
-The Completed Cortex.
+The Completed INGRVM.
 Wires all 17+ logical modules into a watertight neural pipeline.
 
 - **Method:** `__init__()`
@@ -550,7 +550,7 @@ No description.
 - **Method:** `__init__()`
 - **Method:** `forward()`
 ### Class: `ingrvmValidator`
-Simulates a Tier II node's Pre-Frontal Cortex audit logic.
+Simulates a Tier II node's Pre-Frontal INGRVM audit logic.
 
 - **Method:** `audit_ingrvm()`
 ---

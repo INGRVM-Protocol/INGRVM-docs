@@ -1,0 +1,83 @@
+{
+  "phase": "horizon_3",
+  "verdict": "PASS",
+  "timestamp": "2026-03-20T22:20:20.578166",
+  "checks": [
+    {
+      "name": "import:mesh.model_registry",
+      "passed": true,
+      "detail": "Import OK",
+      "category": "test"
+    },
+    {
+      "name": "horizon3:model_catalog_endpoint",
+      "passed": true,
+      "detail": "FOUND: /api/models endpoint",
+      "category": "static_analysis"
+    },
+    {
+      "name": "horizon3:onnx_exporter_exists",
+      "passed": true,
+      "detail": "FOUND: tools/onnx_exporter.py",
+      "category": "general"
+    },
+    {
+      "name": "horizon3:onnx_model_exists",
+      "passed": true,
+      "detail": "Found 3 ONNX model(s)",
+      "category": "general"
+    },
+    {
+      "name": "pytest:test_model_api.py",
+      "passed": true,
+      "detail": "============================= 21 passed in 0.55s ==============================",
+      "category": "test"
+    },
+    {
+      "name": "horizon3:synapse_skill_exists",
+      "passed": true,
+      "detail": "FOUND: mesh/synapse_skill.py",
+      "category": "general"
+    },
+    {
+      "name": "import:mesh.skill_executor",
+      "passed": true,
+      "detail": "Import OK",
+      "category": "test"
+    },
+    {
+      "name": "horizon3:skill_api_endpoints",
+      "passed": true,
+      "detail": "FOUND: /api/skills endpoints",
+      "category": "static_analysis"
+    },
+    {
+      "name": "pytest:test_skill_executor.py",
+      "passed": true,
+      "detail": "============================= 24 passed in 1.95s ==============================",
+      "category": "test"
+    },
+    {
+      "name": "pytest:test_skill_api.py",
+      "passed": true,
+      "detail": "============================= 23 passed in 0.57s ==============================",
+      "category": "test"
+    },
+    {
+      "name": "horizon3:skill_rewards_exists",
+      "passed": true,
+      "detail": "FOUND: mesh/skill_rewards.py",
+      "category": "general"
+    },
+    {
+      "name": "prerequisite:gate_report:horizon_2",
+      "passed": true,
+      "detail": "Latest horizon_2 report: PASS (phase_horizon_2_20260320_194736.json)",
+      "category": "general"
+    }
+  ],
+  "passed_count": 12,
+  "failed_count": 0,
+  "total_count": 12,
+  "sha256": "28e1dfc255abb9b6ad277e7e02ec2ad0bf486fc4072c5eeee0bbaa54d427116d"
+}

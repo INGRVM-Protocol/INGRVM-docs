@@ -1,0 +1,35 @@
+{
+  "model": "gpt2",
+  "quantization": "8bit",
+  "num_shards": 2,
+  "prompt": "The",
+  "generated_text": " to-do list time",
+  "full_text": "The to-do list time",
+  "num_tokens": 5,
+  "generated_token_ids": [
+    284,
+    12,
+    4598,
+    1351,
+    640
+  ],
+  "latencies_ms": [
+    167.63,
+    154.44,
+    147.9,
+    149.38,
+    141.71
+  ],
+  "avg_latency_ms": 152.21,
+  "total_time_s": 0.761,
+  "temperature": 0.7,
+  "mode": "local",
+  "activation_hashes": [
+    "41d650d44d2e2a5d",
+    "f6cdf6206bd4d2aa",
+    "300f075398247070",
+    "e60ede75a8729b4c",
+    "1b12811b320e3083"
+  ],
+  "timestamp": "2026-03-18T00:11:33"
+}

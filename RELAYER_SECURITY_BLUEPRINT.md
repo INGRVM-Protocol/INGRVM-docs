@@ -1,7 +1,7 @@
 # INGRVM Relayer Security Blueprint
 
 ## 1. Governance-Controlled Bridging
-To prevent single-point-of-failure (SPoF) attacks, the $DOPA -> Public bridge will not be controlled by a single private key.
+To prevent single-point-of-failure (SPoF) attacks, the $DOPA -> Subtensor bridge will not be controlled by a single private key.
 
 ### **Initial Implementation: Multi-Sig (Wait-for-Finality)**
 - **Rule:** A bridge exit transaction is only valid if it has been recorded in the `INGRVMLedger` and has reached **absolute finality** (verified in a block with a confirmed Merkle root).
@@ -9,8 +9,8 @@ To prevent single-point-of-failure (SPoF) attacks, the $DOPA -> Public bridge wi
 
 ### **Phase 9.5 Goal: Threshold Signatures (TSS)**
 - **Architecture:** Move from a single relayer to a **Federated Bridge**.
-- **Signing:** Use an off-chain Multi-Party Computation (MPC) ceremony. 3-of-5 nodes (PC, Laptop, and verified 3rd-party community nodes) must sign the public mint transaction.
-- **Benefit:** No single node (not even the PC Master) can unilaterally mint $DOPA on the public chain.
+- **Signing:** Use an off-chain Multi-Party Computation (MPC) ceremony. 3-of-5 nodes (PC, Laptop, and verified 3rd-party community nodes) must sign the public Subtensor burn/mint transaction.
+- **Benefit:** No single node (not even the PC Master) can unilaterally mint assets on the public Bittensor network.
 
 ---
 
@@ -21,7 +21,7 @@ Any node wishing to act as a **Bridge Validator** must lock a minimum of **500 $
 
 ### **Slashing Conditions**
 The `Slashing Consensus` logic implemented in `governance_dao.py` allows the mesh to vote on burning a validator's stake if:
-1.  **Fraudulent Minting:** Attempting to sign a public mint without a corresponding `SLASH` event in the INGRVM Ledger.
+1.  **Fraudulent Minting:** Attempting to sign a public Bittensor transaction without a corresponding `SLASH` event in the INGRVM Ledger.
 2.  **Liveness Failure:** If the bridge validator is unresponsive for > 48 hours, a portion of their stake is burned to compensate for network delay.
 
 ---

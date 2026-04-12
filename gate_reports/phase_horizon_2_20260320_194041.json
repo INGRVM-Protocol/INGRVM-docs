@@ -1,0 +1,53 @@
+{
+  "phase": "horizon_2",
+  "verdict": "PASS",
+  "timestamp": "2026-03-20T19:40:41.531329",
+  "checks": [
+    {
+      "name": "pytest:test_paid_inference.py",
+      "passed": true,
+      "detail": "============================= 13 passed in 1.09s ==============================",
+      "category": "test"
+    },
+    {
+      "name": "pytest:test_governance_dao.py",
+      "passed": true,
+      "detail": "============================= 10 passed in 2.23s ==============================",
+      "category": "test"
+    },
+    {
+      "name": "pytest:test_staking_flow.py",
+      "passed": true,
+      "detail": "============================== 8 passed in 0.54s ==============================",
+      "category": "test"
+    },
+    {
+      "name": "pytest:test_hub_discovery.py",
+      "passed": true,
+      "detail": "============================= 12 passed in 3.47s ==============================",
+      "category": "test"
+    },
+    {
+      "name": "import:api.hub_api",
+      "passed": true,
+      "detail": "Import OK",
+      "category": "test"
+    },
+    {
+      "name": "cli:ingrvm_version",
+      "passed": true,
+      "detail": "INGRVM v0.2.0\nPython 3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]\nCore: C:\\Users\\Tesss' PC\\Desktop\\The_Ecosystem_Claude\\INGRVM\\Core\n\nDependencies:\n  PyTorch (model ",
+      "category": "test"
+    },
+    {
+      "name": "prerequisite:gate_report:horizon_1",
+      "passed": true,
+      "detail": "Latest horizon_1 report: PASS (phase_horizon_1_20260318_013914.json)",
+      "category": "general"
+    }
+  ],
+  "passed_count": 7,
+  "failed_count": 0,
+  "total_count": 7,
+  "sha256": "2485b6f543e379a12b9db9ea32f77226bb939f4b889821f2ef4004f4b7b7baf7"
+}

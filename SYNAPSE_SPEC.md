@@ -1,43 +1,36 @@
-# INGRVM INGRVM Specification (v1.0)
-
-## Overview
-In the INGRVM ecosystem, a **INGRVM** is a discrete unit of intelligence. It is a bundle of SNN (Spiking Neural Network) weights, metadata, and execution logic that allows a node to perform "Useful Work."
-
-## 1. INGRVM Categories
-
-### Type A: Atomic INGRVMs (Micro-Intelligence)
-- **Scale:** Small (1MB - 50MB)
-- **Function:** Complete inference for specialized tasks.
-- **Examples:** Voice Activity Detection, Keyword Spotting, Sentiment Analysis.
-- **Reward:** High frequency, low payout per spike.
-
-### Type B: Neural Shards (Pipeline Intelligence)
-- **Scale:** Large (100MB - 4GB)
-- **Function:** A partial slice of a Massive Language Model (80B+).
-- **Architecture:** Nodes cooperate in a "Pipeline" to pass spikes from Layer N to Layer N+1.
-- **Reward:** High payout per spike, requires high uptime and low latency.
-
-### Type C: Reflex Bridges (Hardware Intelligence)
-- **Scale:** Variable
-- **Function:** Bridges physical hardware (Home sensors, Cameras, Mics) to the mesh.
-- **Reward:** Subsidized by the user requesting the data.
-
-## 2. The Lifecycle of a INGRVM
-
-1.  **Synthesis (Building):** A developer uses the `new_ingrvm.py` tool to scaffold the model.
-2.  **Incubation (Training):** The model is trained (usually on a Tier II PC like your 1080 Ti).
-3.  **Packaging:** The weights and manifest are bundled into a `.INGRVM` file.
-4.  **Registration:** The INGRVM is added to the Global Registry.
-5.  **Activation (Mining):** Node owners download the `.INGRVM` bundle.
-6.  **Firing (Incentive):** When the network routes a spike through that node's ingrvm, the owner earns $DOPA tokens.
-
-## 3. Reward Formula (Proof of Useful Work)
-A node earns tokens based on:
-- **Throughput:** How many spikes were processed.
-- **Precision:** How accurate the result was (verified by the Ensemble).
-- **Stakes:** How much $DOPA the node has already bonded to that ingrvm.
-
----
-*Drafted by The Architect | INGRVM Core*
-
-
+# INGRVM Synapse Spec v1.0: Spiking Attention Protocol
+**Objective:** Define the communication standard for native 1-bit neuromorphic LLMs operating across a decentralized mesh.
+
+## 1. The Synapse Primitive
+Unlike standard LLMs that pass 32-bit floating point activations, **INGRVM Synapse** passes **Binary Spikes (1-bit)** with a **Temporal Offset**.
+
+### Packet Structure:
+```json
+{
+  "source_node": "PEER_ID",
+  "synapse_id": "SYN_01",
+  "spikes": "011010...", 
+  "timing_ref": 1710105600.420,
+  "threshold": 0.85
+}
+```
+
+## 2. Spiking Attention (Coincidence Detection)
+Instead of calculating $Softmax(QK^T)$, INGRVM nodes perform **Coincidence Detection**:
+- **Mechanism:** A neuron fires only if a sufficient number of spikes from different shards arrive within a 5ms window.
+- **Efficiency:** This reduces attention complexity from $O(N^2)$ matrix math to $O(N)$ integer additions.
+
+## 3. Asynchronous Backpressure
+Since nodes may have different NPUs (Pixel 8 vs Desktop), the protocol uses **Dynamic Refractory Periods**:
+- If a node is overloaded, it increases its `refractory_period` signal.
+- The upstream node automatically buffers spikes or reroutes to a faster peer (Task #5 multi-hop).
+
+## 4. Federated Learning (STDP)
+Weight updates are handled locally via **Spike-Timing-Dependent Plasticity (STDP)**:
+- **Causal:** If Pre-synaptic spike arrives *before* Post-synaptic fire -> Strengthen Connection (+DOPA).
+- **Acausal:** If Pre-synaptic spike arrives *after* Post-synaptic fire -> Weaken Connection (-DOPA).
+
+## 5. Security (ZK-Synapse)
+Every Synapse packet must include a **Poseidon Commitment** of the local shard weights. 
+- This prevents a malicious node from "poisoning" the LLM with fraudulent spikes.
+- Commitments are audited by the Hub's `CircuitVerifier` (Phase 11 Task #2).

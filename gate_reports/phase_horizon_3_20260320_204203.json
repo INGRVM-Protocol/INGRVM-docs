@@ -1,0 +1,53 @@
+{
+  "phase": "horizon_3",
+  "verdict": "PARTIAL",
+  "timestamp": "2026-03-20T20:42:03.049217",
+  "checks": [
+    {
+      "name": "import:mesh.model_registry",
+      "passed": true,
+      "detail": "Import OK",
+      "category": "test"
+    },
+    {
+      "name": "horizon3:model_catalog_endpoint",
+      "passed": false,
+      "detail": "MISSING: /api/models endpoint not found in hub_api.py",
+      "category": "static_analysis"
+    },
+    {
+      "name": "horizon3:onnx_exporter_exists",
+      "passed": true,
+      "detail": "FOUND: tools/onnx_exporter.py",
+      "category": "general"
+    },
+    {
+      "name": "horizon3:onnx_model_exists",
+      "passed": true,
+      "detail": "Found 3 ONNX model(s)",
+      "category": "general"
+    },
+    {
+      "name": "pytest:test_model_api.py",
+      "passed": false,
+      "detail": "test_model_api.py does not exist yet",
+      "category": "test"
+    },
+    {
+      "name": "horizon3:synapse_skill_exists",
+      "passed": false,
+      "detail": "MISSING: mesh/synapse_skill.py",
+      "category": "general"
+    },
+    {
+      "name": "prerequisite:gate_report:horizon_2",
+      "passed": true,
+      "detail": "Latest horizon_2 report: PASS (phase_horizon_2_20260320_194736.json)",
+      "category": "general"
+    }
+  ],
+  "passed_count": 4,
+  "failed_count": 3,
+  "total_count": 7,
+  "sha256": "4562760dbde3d3e513a1779cf02a5b4cc90de5baa5dd7e4f7d61a5c2e6b6014d"
+}

@@ -1,0 +1,19 @@
+{
+  "test": "distributed_inference",
+  "num_tokens": 3,
+  "num_shards": 2,
+  "hidden_dim": 64,
+  "mock_model": true,
+  "latencies_ms": [
+    3.28,
+    2.92,
+    3.22
+  ],
+  "avg_latency_ms": 3.14,
+  "generated_token_ids": [
+    25847,
+    5068,
+    2260
+  ],
+  "timestamp": "2026-03-17T20:45:49"
+}

@@ -1,0 +1,53 @@
+{
+  "phase": "horizon_3",
+  "verdict": "PASS",
+  "timestamp": "2026-03-20T21:18:09.874108",
+  "checks": [
+    {
+      "name": "import:mesh.model_registry",
+      "passed": true,
+      "detail": "Import OK",
+      "category": "test"
+    },
+    {
+      "name": "horizon3:model_catalog_endpoint",
+      "passed": true,
+      "detail": "FOUND: /api/models endpoint",
+      "category": "static_analysis"
+    },
+    {
+      "name": "horizon3:onnx_exporter_exists",
+      "passed": true,
+      "detail": "FOUND: tools/onnx_exporter.py",
+      "category": "general"
+    },
+    {
+      "name": "horizon3:onnx_model_exists",
+      "passed": true,
+      "detail": "Found 3 ONNX model(s)",
+      "category": "general"
+    },
+    {
+      "name": "pytest:test_model_api.py",
+      "passed": true,
+      "detail": "============================= 21 passed in 0.61s ==============================",
+      "category": "test"
+    },
+    {
+      "name": "horizon3:synapse_skill_exists",
+      "passed": true,
+      "detail": "FOUND: mesh/synapse_skill.py",
+      "category": "general"
+    },
+    {
+      "name": "prerequisite:gate_report:horizon_2",
+      "passed": true,
+      "detail": "Latest horizon_2 report: PASS (phase_horizon_2_20260320_194736.json)",
+      "category": "general"
+    }
+  ],
+  "passed_count": 7,
+  "failed_count": 0,
+  "total_count": 7,
+  "sha256": "2d90656fe48cb463243f733000670557eb1f92ec401c7121593e5b6601643b49"
+}

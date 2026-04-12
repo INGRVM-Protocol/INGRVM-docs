@@ -14,11 +14,10 @@ The laptop node currently uses "Shadow-SNARKs" (Merkle-based execution traces) f
 
 ---
 
-## 2. Cross-Chain Bridge Architecture ($DOPA -> ERC20/SPL)
-
+## 2. Cross-Chain Bridge Architecture ($DOPA -> Subtensor)
 
 ### **Objective**
-To allow users to "exit" the private INGRVM mesh and swap their earned $DOPA for public-market tokens (Ethereum/Solana) without centralized KYC.
+To allow users to "exit" the private INGRVM mesh and swap their earned $DOPA for public-market tokens (TAO) on the Bittensor Subtensor network without centralized KYC.
 
 ### **The "Mint & Burn" Pattern**
 We will implement a **Burn-on-Source, Mint-on-Target** model using an off-chain Relayer.
@@ -28,7 +27,8 @@ We will implement a **Burn-on-Source, Mint-on-Target** model using an off-chain 
 2.  **Burn:** The Hub records a `SLASH` transaction to the `BURN_ADDRESS` in the `INGRVMLedger`. This creates an immutable record of the destruction of virtual $DOPA.
 3.  **Relay:** A dedicated Bridge service (The Relayer) monitors the `transactions` table for `tx_type='SLASH'` targeting the `BURN_ADDRESS`.
 4.  **Verification:** The Relayer verifies the zk-PoI associated with those earnings to ensure the tokens were legitimately earned.
-5.  **Target Execution:** The Relayer calls the `mint()` function on an Ethereum (ERC20) or Solana (SPL) contract, providing the INGRVM Transaction ID as a nonce to prevent replay attacks.
+5.  **Target Execution:** The Relayer calls the `mint()` (or deposit) function on the Subtensor network, providing the INGRVM Transaction ID as a nonce to prevent replay attacks.
+
 
 ### **Security Considerations**
 - **Relayer Centralization:** Initially, the PC Master Hub acts as the sole relayer. Future phases should move to a Multi-Sig or Decentralized Oracle Network (DON).

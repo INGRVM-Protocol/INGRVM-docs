@@ -1,0 +1,101 @@
+{
+  "phase": "7.2",
+  "verdict": "PARTIAL",
+  "timestamp": "2026-03-17T15:47:40.047144",
+  "checks": [
+    {
+      "name": "pytest:test_security.py",
+      "passed": false,
+      "detail": "/data/data/com.termux/files/usr/bin/python: No module named pytest",
+      "category": "test"
+    },
+    {
+      "name": "pytest:test_zk_proof_integration.py",
+      "passed": false,
+      "detail": "/data/data/com.termux/files/usr/bin/python: No module named pytest",
+      "category": "test"
+    },
+    {
+      "name": "static:verify_node_request:register_node",
+      "passed": true,
+      "detail": "PASS: verify_node_request in register_node()",
+      "category": "static_analysis"
+    },
+    {
+      "name": "static:verify_node_request:receive_vitals",
+      "passed": true,
+      "detail": "PASS: verify_node_request in receive_vitals()",
+      "category": "static_analysis"
+    },
+    {
+      "name": "static:verify_node_request:handle_command",
+      "passed": true,
+      "detail": "PASS: verify_node_request in handle_command()",
+      "category": "static_analysis"
+    },
+    {
+      "name": "static:verify_node_request:upload_ingrvm",
+      "passed": false,
+      "detail": "MISSING: verify_node_request in upload_ingrvm()",
+      "category": "static_analysis"
+    },
+    {
+      "name": "static:verify_node_request:install_synapse",
+      "passed": true,
+      "detail": "PASS: verify_node_request in install_synapse()",
+      "category": "static_analysis"
+    },
+    {
+      "name": "static:verify_node_request:create_dao_proposal",
+      "passed": true,
+      "detail": "PASS: verify_node_request in create_dao_proposal()",
+      "category": "static_analysis"
+    },
+    {
+      "name": "static:verify_node_request:cast_dao_vote",
+      "passed": true,
+      "detail": "PASS: verify_node_request in cast_dao_vote()",
+      "category": "static_analysis"
+    },
+    {
+      "name": "static:verify_node_request:stake_dopa",
+      "passed": true,
+      "detail": "PASS: verify_node_request in stake_dopa()",
+      "category": "static_analysis"
+    },
+    {
+      "name": "static:torch_load_safety:neural/thalamus.py:107",
+      "passed": false,
+      "detail": "MISSING weights_only=True: torch.load at neural/thalamus.py:107",
+      "category": "static_analysis"
+    },
+    {
+      "name": "static:torch_load_safety:identity/ingrvm_registry.py:251",
+      "passed": false,
+      "detail": "MISSING weights_only=True: torch.load at identity/ingrvm_registry.py:251",
+      "category": "static_analysis"
+    },
+    {
+      "name": "static:torch_load_safety:ingrvms/sentiment_alpha.py:85",
+      "passed": false,
+      "detail": "MISSING weights_only=True: torch.load at ingrvms/sentiment_alpha.py:85",
+      "category": "static_analysis"
+    },
+    {
+      "name": "static:torch_load_safety:train_ingrvm_0.py:135",
+      "passed": false,
+      "detail": "MISSING weights_only=True: torch.load at train_ingrvm_0.py:135",
+      "category": "static_analysis"
+    },
+    {
+      "name": "static:torch_load_safety:temp_test_market_upload.py:251",
+      "passed": false,
+      "detail": "MISSING weights_only=True: torch.load at temp_test_market_upload.py:251",
+      "category": "static_analysis"
+    }
+  ],
+  "passed_count": 7,
+  "failed_count": 8,
+  "total_count": 15,
+  "sha256": "4914adde0c9505aa40fb0902ac3e7abf8093daff0d1d5e3bf889dd7ed6b75c40"
+}

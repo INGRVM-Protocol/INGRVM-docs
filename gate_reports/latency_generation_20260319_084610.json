@@ -1,0 +1,40 @@
+{
+  "model": "gpt2",
+  "quantization": "8bit",
+  "num_shards": 2,
+  "device_roles": [
+    "head",
+    "tail"
+  ],
+  "prompt": "The",
+  "generated_text": "[token IDs: [318, 607, 13, 198, 198]]",
+  "full_text": "[prompt + generated IDs]",
+  "num_tokens": 5,
+  "generated_token_ids": [
+    318,
+    607,
+    13,
+    198,
+    198
+  ],
+  "latencies_ms": [
+    629.49,
+    682.61,
+    665.98,
+    657.74,
+    635.8
+  ],
+  "avg_latency_ms": 654.32,
+  "total_time_s": 3.272,
+  "temperature": 0.7,
+  "mode": "local",
+  "kv_cache": true,
+  "activation_hashes": [
+    "5d1f649671985c29",
+    "aa5d93b9c0ff2a6d",
+    "5cae2ccebf14483d",
+    "42c09bdd03b7fc9f",
+    "76653611e806c63a"
+  ],
+  "timestamp": "2026-03-19T08:46:10"
+}

@@ -1,0 +1,35 @@
+{
+  "phase": "7.3",
+  "verdict": "PARTIAL",
+  "timestamp": "2026-03-17T15:36:57.445807",
+  "checks": [
+    {
+      "name": "pytest:test_node_lifecycle.py",
+      "passed": true,
+      "detail": "================== 19 passed, 1 skipped, 1 warning in 9.47s ===================",
+      "category": "test"
+    },
+    {
+      "name": "pytest:test_pipeline_router.py",
+      "passed": true,
+      "detail": "============================= 12 passed in 0.31s ==============================",
+      "category": "test"
+    },
+    {
+      "name": "live:mesh_nodes>=2",
+      "passed": false,
+      "detail": "Hub unreachable at http://127.0.0.1:8000: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>",
+      "category": "live_probe"
+    },
+    {
+      "name": "prerequisite:gate_report:7.2",
+      "passed": false,
+      "detail": "Latest 7.2 report: PARTIAL (phase_7_2_20260317_153643.json)",
+      "category": "general"
+    }
+  ],
+  "passed_count": 2,
+  "failed_count": 2,
+  "total_count": 4,
+  "sha256": "1cfac399bd54f105b5d708c85f299d1561b21157249399bfc3aa2e760b973de7"
+}

@@ -1,0 +1,50 @@
+{
+  "model": "gpt2",
+  "quantization": "8bit",
+  "num_shards": 2,
+  "prompt": "The future of",
+  "generated_text": " the internet will be worse if we ignore the politics",
+  "full_text": "The future of the internet will be worse if we ignore the politics",
+  "num_tokens": 10,
+  "generated_token_ids": [
+    262,
+    5230,
+    481,
+    307,
+    4785,
+    611,
+    356,
+    8856,
+    262,
+    4819
+  ],
+  "latencies_ms": [
+    146.66,
+    146.11,
+    145.51,
+    212.87,
+    154.11,
+    155.82,
+    153.72,
+    146.46,
+    145.43,
+    146.4
+  ],
+  "avg_latency_ms": 155.31,
+  "total_time_s": 1.553,
+  "temperature": 0.7,
+  "mode": "local",
+  "activation_hashes": [
+    "d15d284623d8c5d7",
+    "d66f6f1287fd9568",
+    "8f9b44b1efad5290",
+    "ab0f16eec429524b",
+    "175ea1ac20f61971",
+    "56652728cf964341",
+    "1860d9e6d0af94c1",
+    "e8b076165ec62946",
+    "8dd08a03ab1b9a44",
+    "3941b5854f4e507e"
+  ],
+  "timestamp": "2026-03-18T00:13:50"
+}

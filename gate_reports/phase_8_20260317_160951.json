@@ -1,0 +1,35 @@
+{
+  "phase": "8",
+  "verdict": "FAIL",
+  "timestamp": "2026-03-17T16:09:51.392216",
+  "checks": [
+    {
+      "name": "prerequisite:gate_report:7.2",
+      "passed": false,
+      "detail": "Latest 7.2 report: PARTIAL (phase_7_2_20260317_160936.json)",
+      "category": "general"
+    },
+    {
+      "name": "prerequisite:gate_report:7.3",
+      "passed": false,
+      "detail": "Latest 7.3 report: PARTIAL (phase_7_3_20260317_160951.json)",
+      "category": "general"
+    },
+    {
+      "name": "pytest:test_end_to_end.py",
+      "passed": false,
+      "detail": "test_end_to_end.py does not exist yet",
+      "category": "test"
+    },
+    {
+      "name": "import:hub_server",
+      "passed": false,
+      "detail": "Import failed: ort\n  File \"<frozen importlib._bootstrap>\", line 1371, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1335, in _find_and_load_unlocked\nModuleNotFoundError: No module named 'hub_server'",
+      "category": "test"
+    }
+  ],
+  "passed_count": 0,
+  "failed_count": 4,
+  "total_count": 4,
+  "sha256": "1cf5c143e8727f3b24bc3f540f3d7407952f36c31bc50ed7c445880bc2e92223"
+}

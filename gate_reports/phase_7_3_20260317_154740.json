@@ -1,0 +1,35 @@
+{
+  "phase": "7.3",
+  "verdict": "FAIL",
+  "timestamp": "2026-03-17T15:47:40.222294",
+  "checks": [
+    {
+      "name": "pytest:test_node_lifecycle.py",
+      "passed": false,
+      "detail": "/data/data/com.termux/files/usr/bin/python: No module named pytest",
+      "category": "test"
+    },
+    {
+      "name": "pytest:test_pipeline_router.py",
+      "passed": false,
+      "detail": "/data/data/com.termux/files/usr/bin/python: No module named pytest",
+      "category": "test"
+    },
+    {
+      "name": "live:mesh_nodes>=2",
+      "passed": false,
+      "detail": "Hub unreachable at http://127.0.0.1:8000: <urlopen error [Errno 111] Connection refused>",
+      "category": "live_probe"
+    },
+    {
+      "name": "prerequisite:gate_report:7.2",
+      "passed": false,
+      "detail": "Latest 7.2 report: PARTIAL (phase_7_2_20260317_154740.json)",
+      "category": "general"
+    }
+  ],
+  "passed_count": 0,
+  "failed_count": 4,
+  "total_count": 4,
+  "sha256": "8f6c58eb4115ccce1280b6e7ab8bd6d818c5dfa72217237d21daa6b861abb446"
+}

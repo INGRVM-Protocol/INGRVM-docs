@@ -1,0 +1,41 @@
+{
+  "phase": "horizon_0",
+  "verdict": "PARTIAL",
+  "timestamp": "2026-03-17T14:54:07.458796",
+  "checks": [
+    {
+      "name": "horizon0:model_converter_exists",
+      "passed": true,
+      "detail": "FOUND: tools\\model_converter.py",
+      "category": "general"
+    },
+    {
+      "name": "import:tools.model_converter",
+      "passed": true,
+      "detail": "Import OK",
+      "category": "test"
+    },
+    {
+      "name": "horizon0:converted_model_exists",
+      "passed": false,
+      "detail": "ingrvms/ exists but no converted models found (no shard_config.json)",
+      "category": "general"
+    },
+    {
+      "name": "pytest:test_distributed_inference.py",
+      "passed": false,
+      "detail": "test_distributed_inference.py does not exist yet",
+      "category": "test"
+    },
+    {
+      "name": "horizon0:latency_report_exists",
+      "passed": false,
+      "detail": "No latency reports found in gate_reports/",
+      "category": "general"
+    }
+  ],
+  "passed_count": 2,
+  "failed_count": 3,
+  "total_count": 5,
+  "sha256": "ddfeb7202a165b3e130cd04fc5905bbfd5de11a38aea8ffa633d59bcafeede3f"
+}
